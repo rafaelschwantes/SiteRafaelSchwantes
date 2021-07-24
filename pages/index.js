@@ -133,10 +133,10 @@ export default function Home() {
 
                 const comunidade = {
                   title: dadosDoForm.get('title'),
-                  //image_url: dadosDoForm.get('image'),
-                  //creator_slug: usuarioAleatorio,
-                  imageUrl: dadosDoForm.get('image'),
-                  creatorSlug: usuarioAleatorio,
+                  image_url: dadosDoForm.get('image'),
+                  creator_slug: usuarioAleatorio,
+                  //imageUrl: dadosDoForm.get('image'),
+                  //creatorSlug: usuarioAleatorio,
                 }
                 
                 fetch('/api/comunidades', {
