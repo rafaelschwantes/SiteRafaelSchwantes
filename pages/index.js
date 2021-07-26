@@ -160,7 +160,7 @@ export default function Home() {
               Link: <a href='https://www.digitarioinformatica.com/' target="_blank">digitarioinformatica</a>
             </div>
             <div className="regular">
-            Uma agência Web para criação de Sites e soluções digitais, com 23 anos de experiência na entrega de soluções tecnológica, ajudando outras empresas e profissionais liberais a aumentarem seus faturamentos e visibilidade na internet.
+            O objetivo deste projeto foi a criação de uma agência Web para criação de Sites e soluções digitais, com 23 anos de experiência na entrega de soluções tecnológica, ajudando outras empresas e profissionais liberais a aumentarem seus faturamentos e visibilidade na internet.
             </div>
             <hr />
             <p>Site Programador XPTO</p>
