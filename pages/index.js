@@ -162,6 +162,12 @@ export default function Home() {
             <div className="regular">
             O objetivo deste projeto foi a criação de uma agência Web para criação de Sites e soluções digitais, com 23 anos de experiência na entrega de soluções tecnológica, ajudando outras empresas e profissionais liberais a aumentarem seus faturamentos e visibilidade na internet.
             </div>
+            <div className="regular">
+              Link: <a href='https://www.instagram.com/digitarioinformatica' target="_blank">Instagram</a>
+            </div>
+            <div className="regular">
+              Link: <a href='https://www.facebook.com/digitarioinformatica' target="_blank">Facebook</a>
+            </div>
             <hr />
             <p>Site Programador XPTO</p>
             <div className="regular">
@@ -169,6 +175,12 @@ export default function Home() {
             </div>
             <div className="regular">
             O objetivo deste projeto é entregar conteúdo sobre programação de forma didática, clara e objetiva.
+            </div>
+            <div className="regular">
+              Link: <a href='https://www.instagram.com/programadorxpto' target="_blank">Instagram</a>
+            </div>
+            <div className="regular">
+              Link: <a href='https://www.facebook.com/programadorxpto' target="_blank">Facebook</a>
             </div>
             <hr />
           </Box>
