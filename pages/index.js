@@ -143,44 +143,49 @@ export default function Home() {
             </h1>
             <p>{myinfo.bio}</p>
             <hr />
-            <div className="inConstruction">
+            <div className="regular">
             I have been an IT professional for 20 years, and have a degree in Systems Analysis and Development. My professional life includes several branches of computer science, beginning with the degree, parallel to the area of technical support, and consolidating in the area of development, the area in which I found my true professional passion. I am currently focused on web development, working with PHP language, JavaScript, Python and I feel comfortable working with any other language, depending on the need and structure of the project.
             </div>
             <hr />
-            <p className="inConstruction">Blog: <a href="https://www.programadorxpto.com" target="_blank" >programadorxpto.com</a></p>
             <OrkutNostalgicIconSet />
           </Box>
           <Box>
             <h1 className="title subPageTitle">
-            Projects
+            My personal projects
             </h1>
             <hr />
             <p>Site Digita Rio Informática</p>
-            <div className="regular">
-              Link: <a href='https://www.digitarioinformatica.com/' target="_blank">digitarioinformatica</a>
+            <div className="icon">
+            <a href='https://www.digitarioinformatica.com' target="_blank">
+              <img src="/icon/domain.png"/> | www.digitarioinformatica.com
+              </a>
             </div>
-            <div className="regular">
+            <div className="description">
             A web agency for creating websites and digital solutions, with 23 years of experience in delivering technological solutions, helping other companies and professionals to increase their revenues and visibility on the internet.
             </div>
-            <div className="regular">
-              Link: <a href='https://www.instagram.com/digitarioinformatica' target="_blank">Instagram</a>
-            </div>
-            <div className="regular">
-              Link: <a href='https://www.facebook.com/digitarioinformatica' target="_blank">Facebook</a>
+            <div className="icon">
+            <a href='https://www.instagram.com/digitarioinformatica' target="_blank">
+              <img src="/icon/2048px-Instagram_icon.png"/>
+              </a><a href='https://www.facebook.com/digitarioinformatica' target="_blank">
+              <img src="/icon/Facebook_icon_2013.svg.png"/></a><a href='https://www.twitter.com/digitariobr' target="_blank">
+              <img src="/icon/twitter-squared.png"/></a>
             </div>
             <hr />
             <p>Site Programador XPTO</p>
-            <div className="regular">
-              Link: <a href='https://www.programadorxpto.com/' target="_blank">programadorxpto</a>
+            <div className="icon">
+            <a href='https://www.programadorxpto.com' target="_blank">
+              <img src="/icon/domain.png"/> | www.programadorxpto.com
+              </a>
             </div>
-            <div className="regular">
+            <div className="description">
             The goal of this project is to deliver content about programming in a didactic, clear and objective way.
             </div>
-            <div className="regular">
-              Link: <a href='https://www.instagram.com/programadorxpto' target="_blank">Instagram</a>
-            </div>
-            <div className="regular">
-              Link: <a href='https://www.facebook.com/programadorxpto' target="_blank">Facebook</a>
+            <div className="icon">
+              <a href='https://www.instagram.com/programadorxpto' target="_blank">
+              <img src="/icon/2048px-Instagram_icon.png"/>
+              </a><a href='https://www.facebook.com/programadorxpto' target="_blank">
+              <img src="/icon/Facebook_icon_2013.svg.png"/></a><a href='https://www.twitter.com/rafaelschwantes' target="_blank">
+              <img src="/icon/twitter-squared.png"/></a>
             </div>
             <hr />
           </Box>
@@ -254,7 +259,7 @@ export default function Home() {
           </ProfileRelationsBoxWrapper>
           <ProfileRelationsBoxWrapper>
             <h2 className="smallTitle">
-            Programming language ({comunidades.length})
+            Skills ({comunidades.length})
             </h2>
             <ul>
               {comunidades.map((itemAtual) => {

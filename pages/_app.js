@@ -14,6 +14,8 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f5f5f5;//D9E6F6;
   }
+  a { color: inherit; } 
+
   #__next {
     display: flex;
     min-height: 100vh;
@@ -31,7 +33,8 @@ const GlobalStyle = createGlobalStyle`
   }
   .inConstruction a {
     text-decoration: none;
-  }  
+  }
+
   .regular {
     font-size: 0.8em;
     padding-bottom: 5px;
@@ -39,6 +42,24 @@ const GlobalStyle = createGlobalStyle`
   .regular a{
     text-decoration: none;
   }
+  .description{
+    font-size: 0.8em;
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+  .icon{
+    display: flex;
+  }
+  .icon img {
+    width: 16px;
+    margin-right: 5px;
+  }
+  .icon a{
+    text-decoration: none;
+    font-size: 0.8em;
+    display: inline-flex;
+  }
+
   ${AlurakutStyles}
 `
 

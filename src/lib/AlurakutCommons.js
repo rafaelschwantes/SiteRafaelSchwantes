@@ -189,6 +189,17 @@ export function AlurakutProfileSidebarMenuDefault() {
   return (
     <AlurakutProfileSidebarMenuDefault.Wrapper>
       <nav>
+        <a href="https://www.programadorxpto.com/" target="_blank">
+          <img src={`${BASE_URL}/icons/user.svg`} />
+          My blog
+        </a>
+        <a href="https://www.digitarioinformatica.com/" target="_blank">
+          <img src={`${BASE_URL}/icons/plus.svg`} />
+          My services
+        </a>
+      </nav>
+      <hr />
+      <nav>
         <a href="/curriculum">
           <img src={`${BASE_URL}/icons/user.svg`} />
             Curriculum
