@@ -144,7 +144,7 @@ export default function Home() {
             <p>{myinfo.bio}</p>
             <hr />
             <div className="inConstruction">
-              IT professional for 20 years, with a degree in Systems Analysis and Development. My professional life includes several branches of computer science, beginning with the degree, parallel to the area of technical support, and consolidating in the area of development, area in which I found my true professional passion. I am currently focused on web development, working with the PHP language, JavaScript, Python and feeling comfortable to work with any other language, depending on the need and structure of the project.
+            I have been an IT professional for 20 years, and have a degree in Systems Analysis and Development. My professional life includes several branches of computer science, beginning with the degree, parallel to the area of technical support, and consolidating in the area of development, the area in which I found my true professional passion. I am currently focused on web development, working with PHP language, JavaScript, Python and I feel comfortable working with any other language, depending on the need and structure of the project.
             </div>
             <hr />
             <p className="inConstruction">Blog: <a href="https://www.programadorxpto.com" target="_blank" >programadorxpto.com</a></p>
@@ -160,7 +160,7 @@ export default function Home() {
               Link: <a href='https://www.digitarioinformatica.com/' target="_blank">digitarioinformatica</a>
             </div>
             <div className="regular">
-            O objetivo deste projeto foi a criação de uma agência Web para criação de Sites e soluções digitais, com 23 anos de experiência na entrega de soluções tecnológica, ajudando outras empresas e profissionais liberais a aumentarem seus faturamentos e visibilidade na internet.
+            A web agency for creating websites and digital solutions, with 23 years of experience in delivering technological solutions, helping other companies and professionals to increase their revenues and visibility on the internet.
             </div>
             <div className="regular">
               Link: <a href='https://www.instagram.com/digitarioinformatica' target="_blank">Instagram</a>
@@ -174,7 +174,7 @@ export default function Home() {
               Link: <a href='https://www.programadorxpto.com/' target="_blank">programadorxpto</a>
             </div>
             <div className="regular">
-            O objetivo deste projeto é entregar conteúdo sobre programação de forma didática, clara e objetiva.
+            The goal of this project is to deliver content about programming in a didactic, clear and objective way.
             </div>
             <div className="regular">
               Link: <a href='https://www.instagram.com/programadorxpto' target="_blank">Instagram</a>
