@@ -250,25 +250,29 @@ export default function Home() {
           {/*<ProfileRelationsBox title="Seguidores" items={seguidores} />*/}
           <ProfileRelationsBoxWrapper>
             <h2 className="smallTitle">
-              Last articles ({comunidades.length})
+              Last articles {/*({comunidades.length})*/}
+            </h2>
+            <ul>
+
+            </ul>
+            <span className="inConstruction">... under construction</span>
+          </ProfileRelationsBoxWrapper>
+          <ProfileRelationsBoxWrapper>
+            <h2 className="smallTitle">
+              Last projects {/*({comunidades.length})*/}
             </h2>
             <span className="inConstruction">... under construction</span>
           </ProfileRelationsBoxWrapper>
           <ProfileRelationsBoxWrapper>
             <h2 className="smallTitle">
-              Last projects ({comunidades.length})
-            </h2>
-            <span className="inConstruction">... under construction</span>
-          </ProfileRelationsBoxWrapper>
-          <ProfileRelationsBoxWrapper>
-            <h2 className="smallTitle">
-            Skills ({comunidades.length})
+            Skills {/*({comunidades.length})*/}
             </h2>
             <ul>
               {comunidades.map((itemAtual) => {
                 return (
                   <li key={itemAtual.id}>
-                    <a href={`/communities/${itemAtual.id}`}>
+                    {/*<a href={`/communities/${itemAtual.id}`}>*/}                    
+                    <a href="">
                       <img src={itemAtual.imageUrl} />
                       <span>{itemAtual.title}</span>
                     </a>
