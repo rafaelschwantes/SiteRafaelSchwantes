@@ -86,11 +86,14 @@ export default function Home() {
         'Accept': 'application/json',
       },
       body: JSON.stringify({ "query": `query {
-        allCommunities {
+        allCommunities (
+          orderBy: [rank_ASC]
+        ){
           id 
           title
           imageUrl
           creatorSlug
+          rank
         }
       }` })
     })
