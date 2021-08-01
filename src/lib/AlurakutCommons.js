@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import NextLink from 'next/link';
 
-const BASE_URL = 'http://alurakut.vercel.app/';
+const BASE_URL = 'https://rafaelschwantes.com/';
 const v = '1';
 
 
@@ -190,26 +190,26 @@ export function AlurakutProfileSidebarMenuDefault() {
     <AlurakutProfileSidebarMenuDefault.Wrapper>
       <nav>
         <a href="https://www.programadorxpto.com/" target="_blank">
-          <img src={`${BASE_URL}/icons/user.svg`} />
+          <img src="/icon/blog.png" />
           My blog
         </a>
         <a href="https://www.digitarioinformatica.com/" target="_blank">
-          <img src={`${BASE_URL}/icons/plus.svg`} />
+        <img src="/icon/logo-dr-32.png" />
           My services
         </a>
       </nav>
       <hr />
       <nav>
         <a href="/curriculum">
-          <img src={`${BASE_URL}/icons/user.svg`} />
+        <img src="/icon/curriculo.jpg" />
             Curriculum
         </a>
         <a href="https://github.com/rafaelschwantes" target="_blank">
-        <img src={`${BASE_URL}/icons/plus.svg`} />
+        <img src="/icon/github.png" />
           GitHub
         </a>
         <a href="https://www.linkedin.com/in/rafaelschwantes/" target="_blank">
-        <img src={`${BASE_URL}//icons/logout.svg`} />
+        <img src="/icon/linkedin.png" />
           Linkedin
         </a>
         
@@ -217,15 +217,15 @@ export function AlurakutProfileSidebarMenuDefault() {
       <hr />
       <nav>
       <a href="/projects">
-          <img src={`${BASE_URL}/icons/book.svg`} />
+      <img src="/icon/projects.png" />
             Projects
           </a>
         <a href="/portfolio">
-          <img src={`${BASE_URL}/icons/camera.svg`} />
+        <img src="/icon/portfolio.jpg" />
             Portfolio
           </a>
         <a href="/testimony">
-          <img src={`${BASE_URL}/icons/sun.svg`} />
+        <img src="/icon/testimonial.png" />
             Testimony
           </a>
       </nav>

@@ -154,7 +154,7 @@ export default function Home() {
             My personal projects
             </h1>
             <hr />
-            <p>Site Digita Rio Informática</p>
+            <p>Website Digita Rio Informática</p>
             <div className="icon">
             <a href='https://www.digitarioinformatica.com' target="_blank">
               <img src="/icon/domain.png"/> | www.digitarioinformatica.com
@@ -171,7 +171,7 @@ export default function Home() {
               <img src="/icon/twitter-squared.png"/></a>
             </div>
             <hr />
-            <p>Site Programador XPTO</p>
+            <p>Website Programador XPTO</p>
             <div className="icon">
             <a href='https://www.programadorxpto.com' target="_blank">
               <img src="/icon/domain.png"/> | www.programadorxpto.com
