@@ -40,7 +40,7 @@ export function AlurakutMenu({ githubUser }) {
             Sair
           </a>*/}
           <div>
-            <input placeholder="Pesquisar" />
+            <input placeholder="Pesquisar " />
           </div>
         </nav>
 
