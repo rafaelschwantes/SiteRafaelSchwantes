@@ -9,11 +9,11 @@ function ProfileSidebar(propriedades) {
     <Box as="aside">
       <img src={`https://github.com/${propriedades.githubUser}.png`} style={{ borderRadius: '100px' }} />
       <hr />
-      
+
       <p>
         <a className="boxLink" href={`https://github.com/${propriedades.githubUser}`} target="_blank" >
           @{propriedades.githubUser}
-         
+
         </a>
       </p>
       <hr />
@@ -47,11 +47,11 @@ function ProfileRelationsBox(propriedades) {
 
 export default function Home() {
 
-  
+
   const usuarioGithub = 'rafaelschwantes';
   console.log('teste1:', usuarioGithub);
   console.log('teste2:', `https://api.github.com/users/${usuarioGithub}`);
-  
+
 
 
 
@@ -61,10 +61,10 @@ export default function Home() {
   // const alteradorDeComunidades/setComunidades = comunidades[1];
   // const comunidades = ['Alurakut'];
   const pessoasFavoritas = [
-    
+
   ]
   const [seguidores, setSeguidores] = React.useState([]);
-  // 0 - Pegar o array de dados do github 
+  // 0 - Pegar o array de dados do github
   React.useEffect(function() {
     // GET
     fetch('https://api.github.com/users/rafaelschwantes/followers')
@@ -89,7 +89,7 @@ export default function Home() {
         allCommunities (
           orderBy: [rank_ASC]
         ){
-          id 
+          id
           title
           imageUrl
           creatorSlug
@@ -110,7 +110,7 @@ export default function Home() {
   }, [])
 
   const [myinfo, setMyinfo] = React.useState([]);
-  // 0 - Pegar o array de dados do github 
+  // 0 - Pegar o array de dados do github
   React.useEffect(function() {
     // GET
     fetch('https://api.github.com/users/rafaelschwantes')
@@ -130,7 +130,7 @@ export default function Home() {
 
   // 1 - Criar um box que vai ter um map, baseado nos items do array
   // que pegamos do GitHub
-  
+
   return (
     <>
       <AlurakutMenu />
@@ -142,39 +142,30 @@ export default function Home() {
         <div className="welcomeArea" style={{ gridArea: 'welcomeArea' }}>
           <Box>
             <h1 className="title subPageTitle">
-            {myinfo.name} 
+            {myinfo.name}
             </h1>
             <p>{myinfo.bio}</p>
             <hr />
             <div className="regular">
-            I have been an IT professional for 20 years, and have a degree in Systems Analysis and Development. My professional life includes several branches of computer science, beginning with the degree, parallel to the area of technical support, and consolidating in the area of development, the area in which I found my true professional passion. I am currently focused on web development, working with PHP language, JavaScript, Python and I feel comfortable working with any other language, depending on the need and structure of the project.
+
+            {/* <p>Profissional de TI com 28 anos de experiência, formado em Análise e Desenvolvimento de Sistemas e Licenciado em Matemática. Atuei como gestor de equipes técnicas, desenvolvedor web, analista de suporte, analista de sistemas, coordenador de cursos e professor de informática. Tenho trajetória consolidada em ambientes corporativos e instituições públicas, com destaque para liderança técnica, implantação de sistemas, suporte em larga escala, docência e gestão estratégica.</p> */}
+
+            <p>IT professional with 28 years of experience, holding a degree in Systems Analysis and Development and a teaching degree in Mathematics. I have worked as a technical team manager, web developer, support analyst, systems analyst, course coordinator, and IT instructor. I have a solid track record in both corporate environments and public institutions, with a focus on technical leadership, system implementation, large-scale support, education, and strategic management.</p><br/>
+
+            {/* <p>Atualmente, atuo como líder técnico de times de desenvolvimento e suporte web, com foco em eficiência operacional, melhoria contínua de processos e entrega de valor ao cliente. Tenho forte experiência com PHP e JavaScript, mas minha abordagem generalista me permite adaptar a novas tecnologias conforme as necessidades dos projetos. Busco expandir minha atuação em posições de liderança técnica, aplicando minha vivência em estruturação de equipes, definição de padrões, consolidação de cultura DevOps e integração entre áreas técnicas e de negócio.</p> */}
+
+            <p>Currently, I serve as a technical lead for web development and support teams, focusing on operational efficiency, continuous process improvement, and value delivery to clients. I have strong experience with PHP and JavaScript, but my generalist approach allows me to easily adapt to new technologies according to project needs. I aim to further expand my role in technical leadership, applying my background in team structuring, standardization, DevOps culture building, and integration between technical and business areas.</p>
+
             </div>
             <hr />
             <OrkutNostalgicIconSet />
           </Box>
           <Box>
             <h1 className="title subPageTitle">
-            My personal projects
+            My personal project
             </h1>
             <hr />
-            <p>Website Digita Rio Informática</p>
-            <div className="icon">
-            <a href='https://www.digitarioinformatica.com' target="_blank">
-              <img src="/icon/domain.png"/> | www.digitarioinformatica.com
-              </a>
-            </div>
-            <div className="description">
-            A web agency for creating websites and digital solutions, with 23 years of experience in delivering technological solutions, helping other companies and professionals to increase their revenues and visibility on the internet.
-            </div>
-            <div className="icon">
-            <a href='https://www.instagram.com/digitarioinformatica' target="_blank">
-              <img src="/icon/2048px-Instagram_icon.png"/>
-              </a><a href='https://www.facebook.com/digitarioinformatica' target="_blank">
-              <img src="/icon/Facebook_icon_2013.svg.png"/></a><a href='https://www.twitter.com/digitariobr' target="_blank">
-              <img src="/icon/twitter-squared.png"/></a>
-            </div>
-            <hr />
-            <p>Website Programador XPTO</p>
+            <p>Programador XPTO</p>
             <div className="icon">
             <a href='https://www.programadorxpto.com' target="_blank">
               <img src="/icon/domain.png"/> | www.programadorxpto.com
@@ -208,7 +199,7 @@ export default function Home() {
                   //imageUrl: dadosDoForm.get('image'),
                   //creatorSlug: usuarioGithub,
                 }
-                
+
                 fetch('/api/comunidades', {
                   method: 'POST',
                   headers: {
@@ -248,9 +239,9 @@ export default function Home() {
         </div>
         <div className="profileRelationsArea" style={{ gridArea: 'profileRelationsArea' }}>
           {/*<ProfileRelationsBox title="Seguidores" items={seguidores} />*/}
-          <ProfileRelationsBoxWrapper>
+          {/* <ProfileRelationsBoxWrapper>
             <h2 className="smallTitle">
-              Last articles {/*({comunidades.length})*/}
+              Last articles ({comunidades.length})
             </h2>
             <ul>
 
@@ -259,10 +250,10 @@ export default function Home() {
           </ProfileRelationsBoxWrapper>
           <ProfileRelationsBoxWrapper>
             <h2 className="smallTitle">
-              Last projects {/*({comunidades.length})*/}
+              Last projects ({comunidades.length})
             </h2>
             <span className="inConstruction">... under construction</span>
-          </ProfileRelationsBoxWrapper>
+          </ProfileRelationsBoxWrapper> */}
           <ProfileRelationsBoxWrapper>
             <h2 className="smallTitle">
             Skills {/*({comunidades.length})*/}
@@ -271,7 +262,7 @@ export default function Home() {
               {comunidades.map((itemAtual) => {
                 return (
                   <li key={itemAtual.id}>
-                    {/*<a href={`/communities/${itemAtual.id}`}>*/}                    
+                    {/*<a href={`/communities/${itemAtual.id}`}>*/}
                     <a href="">
                       <img src={itemAtual.imageUrl} />
                       <span>{itemAtual.title}</span>

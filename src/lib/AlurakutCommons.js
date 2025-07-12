@@ -28,7 +28,7 @@ export function AlurakutMenu({ githubUser }) {
         {/*<AlurakutMenu.Logo src="/logo-schwantes.png" />*/}
 
         <nav style={{ flex: 1 }}>
-          {[{ name: 'Home', slug: '/'}, {name: 'Projects', slug: '/projects'}, {name: 'Portfolio', slug: '/portfolio'}].map((menuItem) => (
+          {[{ name: 'Home', slug: '/'}].map((menuItem) => (
             <Link key={`key__${menuItem.name.toLocaleLowerCase()}`} href={`${menuItem.slug.toLocaleLowerCase()}`}>
               {menuItem.name}
             </Link>
@@ -153,7 +153,7 @@ AlurakutMenu.Wrapper = styled.header`
         color: #000;
         opacity: 1;
       }
-    } 
+    }
   }
 `;
 AlurakutMenu.Logo = styled.img`
@@ -189,33 +189,35 @@ export function AlurakutProfileSidebarMenuDefault() {
   return (
     <AlurakutProfileSidebarMenuDefault.Wrapper>
       <nav>
-        <a href="https://www.programadorxpto.com/" target="_blank">
+        <a href="https://www.programadorxpto.com/artigos" target="_blank">
           <img src="/icon/blog.png" />
           My blog
         </a>
-        <a href="https://www.digitarioinformatica.com/" target="_blank">
+        {/* <a href="https://www.digitarioinformatica.com/" target="_blank">
         <img src="/icon/logo-dr-32.png" />
           My services
-        </a>
+        </a> */}
       </nav>
       <hr />
       <nav>
-        <a href="/curriculum">
+        {/* <a href="/curriculum">
         <img src="/icon/curriculo.jpg" />
             Curriculum
-        </a>
+        </a> */}
         <a href="https://github.com/rafaelschwantes" target="_blank">
         <img src="/icon/github.png" />
-          GitHub
+          My GitHub
         </a>
+              <hr />
+
         <a href="https://www.linkedin.com/in/rafaelschwantes/" target="_blank">
         <img src="/icon/linkedin.png" />
-          Linkedin
+          My Linkedin
         </a>
-        
+
       </nav>
       <hr />
-      <nav>
+      {/* <nav>
       <a href="/projects">
       <img src="/icon/projects.png" />
             Projects
@@ -228,7 +230,7 @@ export function AlurakutProfileSidebarMenuDefault() {
         <img src="/icon/testimonial.png" />
             Testimony
           </a>
-      </nav>
+      </nav> */}
     </AlurakutProfileSidebarMenuDefault.Wrapper>
   )
 }
@@ -244,7 +246,7 @@ AlurakutProfileSidebarMenuDefault.Wrapper = styled.div`
     img {
       width: 16px;
       height: 16px;
-      margin-right: 5px; 
+      margin-right: 5px;
     }
   }
 `;
@@ -255,7 +257,7 @@ AlurakutProfileSidebarMenuDefault.Wrapper = styled.div`
 export function OrkutNostalgicIconSet(props) {
   return (
     <OrkutNostalgicIconSet.List>
-      {[
+      {/* {[
         { name: 'Skills', slug: 'skills', icon: 'book' },
         { name: 'Articles', slug: 'articles', icon: 'camera' },
         { name: 'Videos', slug: 'videos', icon: 'video-camera' },
@@ -271,7 +273,7 @@ export function OrkutNostalgicIconSet(props) {
             {props[slug] ? props[slug] : 0}
           </span>
         </li>
-      ))}
+      ))} */}
       {/*[
         { //name: 'Confiável', slug: 'confiavel', icon: 'smile' },
         { //name: 'Legal', slug: 'legal', icon: 'cool' },
@@ -307,14 +309,14 @@ OrkutNostalgicIconSet.List = styled.ul`
     display: grid;
     grid-template-areas:
       "title title"
-      "number number"; 
-    
+      "number number";
+
     &:not(:last-child) {
       margin-right: 5px;
     }
     .OrkutNostalgicIconSet__title {
       display: block;
-      font-style: italic; 
+      font-style: italic;
     }
     .OrkutNostalgicIconSet__number {
       min-width: 15px;
@@ -354,13 +356,13 @@ const AlurakutLoginScreen = css`
     --gap: 12px;
     --gutter: 16px;
     grid-gap: var(--gap);
-    grid-template-areas: 
+    grid-template-areas:
       "logoArea"
       "formArea"
       "footerArea";
     @media(min-width: 860px) {
       grid-template-columns: 2fr 1fr;
-      grid-template-areas: 
+      grid-template-areas:
               "logoArea formArea"
               "logoArea formArea"
               "footerArea footerArea";
@@ -474,14 +476,14 @@ export const AlurakutStyles = css`
     width: 8px;
   }
   *::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: #f1f1f1;
   }
   *::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: #888;
     border-radius: 10px;
   }
   *::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: #555;
   }
   a,
   button {
@@ -510,4 +512,4 @@ export const AlurakutStyles = css`
     }
   }
   ${AlurakutLoginScreen}
-`; 
+`;
